@@ -2,62 +2,62 @@
 
 The Tile Pyramid SDK requires that the following interfaces are implemented.
 
-| Interface | Description |
+| -interface | Description |
 | -- | -- |
-| [IColorMap](#IColorMap-Interface) | Used to retrieve color data.|
-| **[IDemPlateFileGenerator](#IDemPlateFileGeneratorInterface)**| Used to generate plate files for DEM tiles (plate files are single files containing all or part of a tile pyramid for easy copying, sharing and backup).
-| [**IDemTileSerializer**](#IDemTileSerializerInterface)| Used to serialize and deserialize (save and load) DEM data.
-| [**IElevationMap**](#IElevationMapInterface)| Used to retrieve elevation data.
-| [**IGrid**](#IGridInterface)| Used to read source data into a source grid which can be accessed using UV or XY co-ordinates.
-| **[IImageTileSerializer](#IImageTileSerializerInterface)**| Used to serialize and deserialize (save and load) image data.
-| **[IPlateFileGenerator](#IPlateFileGeneratorInterface)**| Used to generate plate files for image tiles (plate files are single files containing all or part of a tile pyramid for easy copying, sharing and backup).
-| [**IProjectionGridMap**](#IProjectionGridMapInterface)| Used to query the data grid based on the projection.
-| [**ITileCreator**](#ITileCreatorInterface)| Used to build the tile pyramids.
+| [IColorMap](#icolorMap-interface) | Used to retrieve color data.|
+| [IDemPlateFileGenerator](#idemplatefilegenerator-interface)| Used to generate plate files for DEM tiles (plate files are single files containing all or part of a tile pyramid for easy copying, sharing and backup).
+| [IDemTileSerializer](#idemtileserializer-interface)| Used to serialize and deserialize (save and load) DEM data.
+| [IElevationMap](#ielevationmap-interface)| Used to retrieve elevation data.
+| [IGrid](#igrid-interface)| Used to read source data into a source grid which can be accessed using UV or XY co-ordinates.
+| [IImageTileSerializer](#iimagetileserializer-interface)| Used to serialize and deserialize (save and load) image data.
+| [IPlateFileGenerator](#iplatefilegenerator-interface)| Used to generate plate files for image tiles (plate files are single files containing all or part of a tile pyramid for easy copying, sharing and backup).
+| [IProjectionGridMap](#iprojectiongridmap-interface)| Used to query the data grid based on the projection.
+| [ITileCreator](#itilecreator-interface)| Used to build the tile pyramids.
 
 The following are the core classes of the SDK, and source code is provided for all of them. They are encapsulated in the **Sdk.Core** project.
 
 
 | Class | Description |
 | -- | -- |
-| **Boundary**| Defines a bounding rectangle.
-| **Constants**| Defines a range of global constants.
-| **<a name="DataColorMap">DataColorMap**| Implements [**IColorMap**](#IColorMapInterface), to generate color pixels corresponding to latitude and longitude from the source grid.
-| **<a name="DataGrid">DataGrid**| Implements [**IGrid**](#IGridInterface), providing a two dimensional array of data.
-| **<a name="DemPlateFileGenerator">DemPlateFileGenerator**| Implements **[IDemPlateFileGenerator](#IDemPlateFileGeneratorInterface)**, to produce a single file containing all the DEM data tiles.
-| **<a name="DemTileSerializer">DemTileSerializer**| Implements [**IDemTileSerializer**](#IDemTileSerializerInterface) to save and load DEM tiles on the file system.
-| **Enums**| Defines the global enumerations.
-| **<a name="EquirectangularGridMap">EquirectangularGridMap**| Implements [**IProjectionGridMap**](#IProjectionGridMapInterface), using equirectangular projection.
-| **Helper**| Defines a few utility methods related to unit conversions.
-| **<a name="ImageColorMap">ImageColorMap**| Implements [**IColorMap**](#IColorMapInterface), and references [**IProjectionGridMap**](#IProjectionGridMapInterface)..
-| **<a name="ImageGrid">ImageGrid**| Implements [**IGrid**](#IGridInterface), providing a two dimensional array of image data.
-| **<a name="ImageTileSerializer">ImageTileSerializer**| Implements [**IImageTileSerializer**](#IImageTileSerializerInterface) to save and load image tiles on file system.
-| **<a name="MercatorDemTileCreator">MercatorDemTileCreator**| Implements [**ITileCreator**](#ITileCreatorInterface) to create Mercator DEM tiles. Refer also to [Appendix I: DEM Tile Data](#Appendix).
-| **<a name="MercatorTileCreator">MercatorTileCreator**| Implements [**ITileCreator**](#ITileCreatorInterface) to create Mercator image tiles.
-| **<a name="MultipleDemPlateFileGenerator">MultipleDemPlateFileGenerator**| Implements **[IDemPlateFileGenerator](#IDemPlateFileGeneratorInterface)**, to produce multiple DEM plate files containing DEM data tiles.
-| **MercatorPlateFileDetails**| Used to calculate and store the details of multiple plate files.
-| **<a name="MultiplePlateFileGenerator">MultiplePlateFileGenerator**| Implements **[IPlateFileGenerator](#IPlateFileGeneratorInterface)** to produce multiple plate files containing image tiles.
-| **<a name="MultiTileCreator">MultiTileCreator**| Implements [**ITileCreator**](#ITileCreatorInterface) for different tile creator instances.
-| **OctTileMap**| Defines an octahedral tile map.
-| **PlateFile**| Defines utility methods for plate file operations.
-| **<a name="PlateFileGenerator">PlateFileGenerator**| Implements [**IPlateFileGenerator**](#IPlateFileGeneratorInterface), used to create plate files.
-| **PlateFileHelper**| Defines a range of utility methods for plate files.
-| **Tile**| Simple class holding tile coordinates.
-| **<a name="TileChopper">TileChopper**| Implements [**ITileCreator**](#ITileCreatorInterface) to create image tiles without changing the projection.
-| **TileCreatorFactory**| Creates an image or DEM tile creator instance for the specified projection type.
-| **TileGenerator**| This class contains the main control/workflow code for the tile generation process.
-| **TileHelper**| Defines a range of utility methods for tiles and bitmaps.
-| **<a name="ToastDemTileCreator">ToastDemTileCreator**| Implements [**ITileCreator**](#ITileCreatorInterface) to create Toast DEM tiles. Refer also to [Appendix I: DEM Tile Data](#Appendix).
-| **ToastHelper**| Helper class, in particular working with Toast coordinates.
-| **<a name="ToastTileCreator">ToastTileCreator**| Implements [**ITileCreator**](#ITileCreatorInterface) to create Toast image tiles.
-| **WtmlCollection**| Defines a new Wtml collection, a WorldWide Telescope data file.
+| Boundary | Defines a bounding rectangle.
+| Constants | Defines a range of global constants.
+| DataColorMap | Implements [IColorMap](#icolorMap-interface), to generate color pixels corresponding to latitude and longitude from the source grid.
+| DataGrid | Implements [IGrid](#igrid-interface), providing a two dimensional array of data.
+| DemPlateFileGenerator | Implements [IDemPlateFileGenerator](#idemplatefilegenerator-interface), to produce a single file containing all the DEM data tiles.
+| DemTileSerializer | Implements [IDemTileSerializer](#idemtileserializer-interface) to save and load DEM tiles on the file system.
+| Enums | Defines the global enumerations.
+| EquirectangularGridMap | Implements [IProjectionGridMap](#IProjectionGridMap-interface), using equirectangular projection.
+| Helper| Defines a few utility methods related to unit conversions.
+| ImageColorMap | Implements [IColorMap](#icolormap-interface), and references [IProjectionGridMap](#IProjectionGridMap-interface)..
+| ImageGrid | Implements [IGrid](#igrid-interface), providing a two dimensional array of image data.
+| ImageTileSerializer| Implements [IImageTileSerializer](#iimagetileserializer-interface) to save and load image tiles on file system.
+| MercatorDemTileCreator| Implements [ITileCreator](#itilecreator-interface) to create Mercator DEM tiles. Refer also to [Appendix I: DEM Tile Data](demtiledata.md).
+| MercatorTileCreator| Implements [ITileCreator](#itilecreator-interface) to create Mercator image tiles.
+| MultipleDemPlateFileGenerator | Implements [IDemPlateFileGenerator](#idemplatefilegenerator-interface), to produce multiple DEM plate files containing DEM data tiles.
+| MercatorPlateFileDetails |  Used to calculate and store the details of multiple plate files.
+| MultiplePlateFileGenerator | Implements [IPlateFileGenerator](#iplatefilegenerator-interface) to produce multiple plate files containing image tiles.
+| MultiTileCreator | Implements [ITileCreator](#itilecreator-interface) for different tile creator instances.
+| OctTileMap | Defines an octahedral tile map.
+| PlateFile | Defines utility methods for plate file operations.
+| PlateFileGenerator | Implements [IPlateFileGenerator](#iplatefilegenerator-interface), used to create plate files.
+| PlateFileHelper | Defines a range of utility methods for plate files.
+| Tile | Simple class holding tile coordinates.
+| TileChopper| Implements [ITileCreator](#itilecreator-interface) to create image tiles without changing the projection.
+| TileCreatorFactory | Creates an image or DEM tile creator instance for the specified projection type.
+| TileGenerator | This class contains the main control/workflow code for the tile generation process.
+| TileHelper | Defines a range of utility methods for tiles and bitmaps.
+| ToastDemTileCreator | Implements [ITileCreator](#itilecreator-interface) to create Toast DEM tiles. Refer also to [Appendix I: DEM Tile Data](#Appendix).
+| ToastHelper | Helper class, in particular working with Toast coordinates.
+| ToastTileCreator| Implements [ITileCreator](#itilecreator-interface) to create Toast image tiles.
+| WtmlCollection | Defines a new Wtml collection, a WorldWide Telescope data file.
 
-## IColorMap Interface
+## IColorMap -interface
 
 The **IColorMap** interface is used to retrieve color data, and exposes the following methods. It does not inherit from another interface.
 
 | Method | Description |
 | -- | -- |
-| [**GetColor**](#IColorMapGetColor)| Retrieves the color corresponding to a longitude and latitude. |
+| [GetColor](#icolormapgetcolor)| Retrieves the color corresponding to a longitude and latitude. |
 
 
 #### Implemented in Classes
@@ -91,7 +91,7 @@ The method returns a **Color** object, containing the color of the pixel at the 
 
 Typically the color returned comes from the source image. Note the order of the parameters, longitude first.
 
-## IDemPlateFileGenerator Interface
+## IDemPlateFileGenerator -interface
 
 The **IDemPlateFileGenerator** interface is used to generate plate files for DEM tiles (plate files are single files containing all or part of a tile pyramid for easy copying, sharing and backup). It does not inherit from another interface.
 
@@ -128,7 +128,7 @@ The **CreateFromDemTile** method is used to create a plate file from a DEM tile 
 #### Parameters
 
 serializer
-  Specifies the [**IDemTileSerializer**](#IDemTileSerializerInterface) object.
+  Specifies the [**IDemTileSerializer**](#IDemTileSerializer-interface) object.
 
 #### Return Values
 
@@ -138,7 +138,7 @@ The method does not returns a value.
 
 None.
 
-## IDemTileSerializer Interface
+## IDemTileSerializer -interface
 
 The **IDemTileSerializer** interface is used to serialize and deserialize (save and load) DEM data, and exposes the following methods. It does not inherit from another interface.
 
@@ -215,7 +215,7 @@ The size of a DEM tile is fixed depending on the projection, for Mercator it is 
 
  For Toast it is 513 values, these values are not in a perfect grid. Refer to the static tables listed first in the **ToastDemTileCreator** class.
 
-## IElevationMap Interface
+## IElevationMap -interface
 
 The **IElevationMap** interface is used to retrieve elevation data, and exposes the following methods. It does not inherit from another interface.
 
@@ -255,7 +255,7 @@ The method returns a **short**, containing the elevation value.
 
 Note the order of the parameters, longitude first.
 
-## IGrid Interface
+## IGrid -interface
 
 The **IGrid** interface is used to read source data into a source grid which can be accessed using UV or XY co-ordinates. It does not inherit from another interface.
 
@@ -387,7 +387,7 @@ The method returns an **int**, containing the Y pixel value for the given coordi
 
 The V coordinate is in the range 0 to 1.
 
-## IImageTileSerializer Interface
+## IImageTileSerializer -interface
 
 
 
@@ -472,7 +472,7 @@ The method does not return a value.
 Indexes of the tile pyramid are zero based. The size of an image tile is fixed at 256 x 256 pixels.
 
 
-## IPlateFileGenerator Interface
+## IPlateFileGenerator -interface
 
 The **IPlateFileGenerator** interface is used to generate plate files for image tiles (plate files are single files containing all or part of a tile pyramid for easy copying, sharing and backup).  It does not inherit from another interface.
 
@@ -511,7 +511,7 @@ The **CreateFromImageTile** method is used to create a plate file from an image 
 #### Parameters
 
 serializer
-  Specifies the [**IImageTileSerializer**](#IImageTileSerializerInterface) object.
+  Specifies the [**IImageTileSerializer**](#IImageTileSerializer-interface) object.
 
 #### Return Values
 
@@ -522,7 +522,7 @@ The method does not returns a value.
 The image pyramid must be created before a plate file can be generated. Plate files are single files that make it easier to send or archive the tile pyramid.
 
 
-## IProjectionGridMap Interface
+## IProjectionGridMap -interface
 
 
 
@@ -543,7 +543,7 @@ The **IProjectionGridMap** interface is used to query the data grid based on the
 | Property | Type | Get/Set | Description
 | -- | -- | -- | -- |
 | **InputBoundary**| **Boundary**| Get only| Bounding box of the map.
-| **InputGrid**| **[IGrid](#IGridInterface)**| Get only| The source grid for the map.
+| **InputGrid**| **[IGrid](#igrid-interface)**| Get only| The source grid for the map.
 
 
 #### Implemented in Class
@@ -651,7 +651,7 @@ The method returns a **bool**.
 
 Note the order of the parameters, longitude first.
 
-## ITileCreator Interface
+## ITileCreator -interface
 
 The **ITileCreator** interface is used to build the tile pyramids, and exposes the following methods. It does not inherit from another interface.
 
