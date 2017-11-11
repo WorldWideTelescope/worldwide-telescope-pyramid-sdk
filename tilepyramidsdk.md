@@ -4,7 +4,7 @@ The Tile Pyramid SDK requires that the following interfaces are implemented.
 
 | Interface | Description |
 | -- | -- |
-| [**IColorMap**](#IColorMapInterface) | Used to retrieve color data.|
+| [IColorMap](#IColorMap-Interface) | Used to retrieve color data.|
 | **[IDemPlateFileGenerator](#IDemPlateFileGeneratorInterface)**| Used to generate plate files for DEM tiles (plate files are single files containing all or part of a tile pyramid for easy copying, sharing and backup).
 | [**IDemTileSerializer**](#IDemTileSerializerInterface)| Used to serialize and deserialize (save and load) DEM data.
 | [**IElevationMap**](#IElevationMapInterface)| Used to retrieve elevation data.
