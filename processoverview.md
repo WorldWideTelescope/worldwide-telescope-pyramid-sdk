@@ -1,4 +1,4 @@
-## Process Overview
+# Process Overview
 
 The input for visualization is a dataset (typically in the form of an image, but could for example be a list of X,Y,Z values) that contains a specific value (depth, elevation or any other magnitude value) for different pairs of latitude and longitude.
 

@@ -325,7 +325,7 @@ The **GetValueAt** method retrieves the value contained at the specified pixel l
 i
   Specifies X index.
 j
-  Specifies Y i<span class="style1">ndex</span>.
+  Specifies Y index.
 
 #### Return Values
 
