@@ -23,7 +23,9 @@ You can perform this procedure using the user interface (UI) or a script.
 2.  In Control Panel, click `Programs` and then click `Turn Windows features on or off.`
 3.  In the Windows Features dialog box, click `Internet Information Services` and then click `OK`.
 
-#### Installing IIS on Windows Server 2008 and R2 @ [http://technet.microsoft.com/en-us/library/cc771209(WS.10).aspx](http://technet.microsoft.com/en-us/library/cc771209(WS.10).aspx)
+#### Installing IIS on Windows Server 2008 and R2
+
+[https://technet.microsoft.com/en-us/library/cc771209.aspx](https://technet.microsoft.com/en-us/library/cc771209.aspx)
 
 When you install IIS, it is preconfigured to serve as a default Web site; however, you may want to change some of the settings. To change the basic settings for the Web site and to emulate the steps that are required to set up Apache for the first time by using the configuration file:
 
@@ -58,7 +60,7 @@ The Tile Service will serve up image and DEM tiles created using the Tile Pyrami
 
 The Community Service displays a range of sign up files to different communities in the form of thumbnails and descriptions. If a thumbnail is selected the community will be joined and the payload file sent to the user. The account under which the Application Pool is running should have write permissions to the Community Directory to support the caching of payload Xml. The Community Service treats the following folder names as reserved: All Tours, Latest, Plates, DemPlates and Pyramid.
 
-For more information on Community files, refer to the [WorldWide Telescope Data Files Reference.](http://www.worldwidetelescope.org/Docs/WorldWideTelescopeDataFilesReference.html)
+For more information on Community files, refer to the [WorldWide Telescope Data Files Reference.](https://www.gitbook.com/book/worldwidetelescope/worldwide-telescope-data-files-reference)
 
 
 ### Including DEM data
@@ -87,7 +89,7 @@ To do this edit the following entries in the WTML file to get DEM for the images
 
     Where:
 
-  `Input`: Is the path to an Equirectangular image in PNG or JPEG format. You can find a collection of Equirectangular images at: [http://visibleearth.nasa.gov/view-set.php?categoryID=2363](http://visibleearth.nasa.gov/view-set.php?categoryID=2363)
+  `Input`: Is the path to an Equirectangular image in PNG or JPEG format. You can find a collection of Equirectangular images at: [http://visibleearth.nasa.gov/](http://visibleearth.nasa.gov/)
 
   `Projection`: Projection can be either Toast or Mercator. For more information please refer to: [WorldWide Telescope Projection Reference](https://www.gitbook.com/book/worldwidetelescope/worldwide-telescope-projection-reference)
 
