@@ -135,8 +135,10 @@ same Mercator projection as Virtual Earth.
 To do this edit the following entries in the WTML file to get DEM for the
 images:
 
-`ElevationModel="True"
-DemUrl="http://ecn.t{S}.tiles.virtualearth.net/tiles/d{Q}.elv?g=1&amp;n=z"`
+```
+ElevationModel="True"
+DemUrl="http://ecn.t{S}.tiles.virtualearth.net/tiles/d{Q}.elv?g=1&amp;n=z"
+```
 
 
 ## Running the Samples
@@ -152,10 +154,12 @@ and save it to a folder. For example, save it to
     SDK\Samples` folder.
 3.  Execute the command below:
 
-``` BlueMarbleApp.exe
+```
+BlueMarbleApp.exe
 /Input=C:\SDKInputData\world.topo.bathy.200401.3x5400x2700.jpg
 /Projection=Toast /InputBoundary=<Top Left Latitude, Top Left Longitude,
-Bottom Right Latitude, Bottom Right Longitude> ```
+Bottom Right Latitude, Bottom Right Longitude>
+```
 
 Where:
 
@@ -192,9 +196,11 @@ to smaller parts and run this sample using them). Save it to
 3.  Open the command prompt and navigate to the `(SDKInstallDir)\Tile Pyramid
     SDK\Samples` folder, and execute the following command:
 
-``` BlueMarbleApp.exe /Input=C:\SDKInputData\MultiPart.xml
+```
+BlueMarbleApp.exe /Input=C:\SDKInputData\MultiPart.xml
 /Projection=Mercator /InputBoundary=<Top Left Latitude, Top Left Longitude,
-Bottom Right Latitude, Bottom Right Longitude> ```
+Bottom Right Latitude, Bottom Right Longitude>
+```
 
 Where:
 
@@ -221,8 +227,9 @@ are stored in the `%ProgramData%\Microsoft Research\WWT SDK\Output` folder.
 2.  Now navigate to the `(SDKInstallDir)\Tile Pyramid SDK\Samples` folder and
     execute the following command:
 
-``` SpecificRegionDataSet.exe /Input=C:\SDKInputData\glaciermulti.xyz
-/Projection=Toast ```
+```
+SpecificRegionDataSet.exe /Input=C:\SDKInputData\glaciermulti.xyz /Projection=Toast
+```
 
 Where:
 
@@ -247,8 +254,10 @@ are stored in the `%ProgramData%\Microsoft Research\WWT SDK\Output` folder.
 4.  Open the command prompt and navigate to the `(SDKInstallDir)\Tile Pyramid
     SDK\Samples` folder, and execute the following command:
 
-``` WorldDataSet.exe /Input=C:\SDKInputData\ETOPO1-Bed-g.int.xyz
-/Projection=Toast /ColorMap=colormap.png /ColorMapOrientation=Vertical ```
+```
+WorldDataSet.exe /Input=C:\SDKInputData\ETOPO1-Bed-g.int.xyz
+  /Projection=Toast /ColorMap=colormap.png /ColorMapOrientation=Vertical
+```
 
 Where:
 
