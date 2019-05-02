@@ -26,7 +26,7 @@ Telescope.
     demonstrates how a data set in XYZ format, for the entire world can be
     transformed to Toast or Mercator projection image pyramids that can be
     visualized in WorldWide Telescope. The data needs to be comma separated
-    containing  longitude, latitude and depth values.
+    containing  longitude, latitude and depth values.
 4.  [Sharing Service](#to-setup-the-sharing-service): This sample demonstrates
     how a web application can be set up to serve both images and DEM tiles to
     WWT, and Community data. It provides a means for users to share their
@@ -287,33 +287,33 @@ are stored in the `%ProgramData%\Microsoft Research\WWT SDK\Output` folder.
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Regions>
-   <Row>
-    <Region name="A1">
-      <ImagePath>C:\SDKInputData\A1.jpg</ImagePath>
-    </Region>
-    <Region name="B1">
-      <ImagePath>C:\SDKInputData\B1.jpg</ImagePath>
-    </Region>
-    <Region name="C1">
-      <ImagePath>C:\SDKInputData\C1.jpg</ImagePath>
-    <Region name="D1">
-    </Region>
-      <ImagePath>C:\SDKInputData\D1.jpg</ImagePath>
-    </Region>
-   </Row>
-   <Row>
-    <Region name="A2">
-      <ImagePath>C:\SDKInputData\A2.jpg</ImagePath>
-    </Region>
-    <Region name="B2">
-      <ImagePath>C:\SDKInputData\B2.jpg</ImagePath>
-    </Region>
-    <Region name="C2">
-      <ImagePath>C:\SDKInputData\C2.jpg</ImagePath>
-    </Region>
-    <Region name="D2">
-      <ImagePath>C:\SDKInputData\D2.jpg</ImagePath>
-    </Region>
-   </Row>
+   <Row>
+    <Region name="A1">
+      <ImagePath>C:\SDKInputData\A1.jpg</ImagePath>
+    </Region>
+    <Region name="B1">
+      <ImagePath>C:\SDKInputData\B1.jpg</ImagePath>
+    </Region>
+    <Region name="C1">
+      <ImagePath>C:\SDKInputData\C1.jpg</ImagePath>
+    <Region name="D1">
+    </Region>
+      <ImagePath>C:\SDKInputData\D1.jpg</ImagePath>
+    </Region>
+   </Row>
+   <Row>
+    <Region name="A2">
+      <ImagePath>C:\SDKInputData\A2.jpg</ImagePath>
+    </Region>
+    <Region name="B2">
+      <ImagePath>C:\SDKInputData\B2.jpg</ImagePath>
+    </Region>
+    <Region name="C2">
+      <ImagePath>C:\SDKInputData\C2.jpg</ImagePath>
+    </Region>
+    <Region name="D2">
+      <ImagePath>C:\SDKInputData\D2.jpg</ImagePath>
+    </Region>
+   </Row>
 </Regions>
 ```
