@@ -283,8 +283,6 @@ are stored in the `%ProgramData%\Microsoft Research\WWT SDK\Output` folder.
 
 #### Sample XML File for the Multi-Part Equirectangular Image
 
-<table class="T1" cellpadding="4" cellspacing="4">
-
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 
